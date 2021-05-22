@@ -15,7 +15,6 @@ void LedInt(void){
 	IO1SET = LED0_bm;
 }
 //-------------------------
-
 void LedOn(unsigned char ucLedIndeks){
 	
 	IO1CLR=(LED0_bm|LED1_bm|LED2_bm|LED3_bm);
@@ -38,7 +37,6 @@ void LedOn(unsigned char ucLedIndeks){
 	}
 }
 //-------------------------
-
 void LedStep(enum Direction Direction){
 	
 	static unsigned int uiLedNumber;
@@ -53,7 +51,6 @@ void LedStep(enum Direction Direction){
 	}
 }
 //-------------------------
-
 void LedStepLeft(void){
 	LedStep(LEFT);
 }
