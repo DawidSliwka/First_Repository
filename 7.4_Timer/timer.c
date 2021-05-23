@@ -8,7 +8,7 @@
 #define RESET_ON_MR0 (1<<1)
 #define STOP_ON_MR0 (1<<2)
 
-#define MR0_INTERRUPT (1<<0) 
+#define MR0_INTERRUPT (1<<0)
 
 void InitTimer0(void){
 	T0TCR = T0TCR | COUNTER_ENABLE;
