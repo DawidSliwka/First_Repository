@@ -24,7 +24,9 @@ enum  KeyboardState eKeyboardRead(void){
 		return RELEASED;
 	}
 }
+
 //-------------------------
+
 void KeyboardInit(void){
 	
 	IO0DIR=IO0DIR&(~(BUTTON0_bm|BUTTON1_bm|BUTTON2_bm|BUTTON3_bm));
