@@ -31,6 +31,6 @@ void InitTimer0Match0(unsigned int uiDelayTime){
 
 void WaitOnTimer0Match0(void){
 	while((T0IR & MR0_INTERRUPT) != MR0_INTERRUPT){}
-	//T0IR = T0IR | MR0_INTERRUPT; jesli wczesniej na bicie 2,3.. jest 1, to ponownie ja wpisuje czyli ustawiam 0
+	//T0IR = T0IR | MR0_INTERRUPT; jesli wczesniej na bicie 2,3.. jest 1, to ponownie ja wpisuje, czyli ustawiam 0
 	T0IR = MR0_INTERRUPT;
 }
